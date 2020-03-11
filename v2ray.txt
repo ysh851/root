@@ -1,7 +1,7 @@
 ###############################################################
-# ±¾·¶ÀıÀ´Ô´ÎªÍøÂç
-# YouTube ËÑË÷ ²¨×Ğ·ÖÏí
-# Ô­ÎÄ·¢²¼µØÖ· https://www.v2rayssr.com/clashxx.html
+# æœ¬èŒƒä¾‹æ¥æºä¸ºç½‘ç»œ
+# YouTube æœç´¢ æ³¢ä»”åˆ†äº«
+# åŸæ–‡å‘å¸ƒåœ°å€ https://www.v2rayssr.com/clashxx.html
 ###############################################################
 port: 7890
 socks-port: 7891
@@ -51,29 +51,29 @@ cfw-bypass:
     - <local>
 cfw-latency-timeout: 5000
 
-# ´úÀí½Úµã
+# ä»£ç†èŠ‚ç‚¹
 Proxy:
-###############################################################ÅäÖÃ·Ö¸îÏß
-# Shadowsocks Ö§³ÖµÄ¼ÓÃÜ·½Ê½:
+###############################################################é…ç½®åˆ†å‰²çº¿
+# Shadowsocks æ”¯æŒçš„åŠ å¯†æ–¹å¼:
 #   aes-128-gcm aes-192-gcm aes-256-gcm
 #   aes-128-cfb aes-192-cfb aes-256-cfb
 #   aes-128-ctr aes-192-ctr aes-256-ctr
 #   rc4-md5 chacha20-ietf xchacha20
 #   chacha20-ietf-poly1305 xchacha20-ietf-poly1305
  
-# Shadowsocks ÅäÖÃ·¶±¾
-# µÚÒ»ÖÖÅäÖÃ
-#- name: "ÄãµÄSS½Úµã1"               # Èí¼şÏÔÊ¾µÄ½ÚµãÃû×Ö
-#  type: ss                                  # ´úÀíÀàĞÍ
-#  server: 1.2.4.8                          # ·şÎñÆ÷ IP
-#  port: 443                                 #  ¶Ë¿ÚºÅ
-#  cipher: chacha20-ietf-poly1305   # ¼ÓÃÜ·½·¨
-#  password: "password"                # SS ÃÜÂë
-#  # udp: true                                #Ä¬ÈÏ²»¿ªÆô
+# Shadowsocks é…ç½®èŒƒæœ¬
+# ç¬¬ä¸€ç§é…ç½®
+#- name: "ä½ çš„SSèŠ‚ç‚¹1"               # è½¯ä»¶æ˜¾ç¤ºçš„èŠ‚ç‚¹åå­—
+#  type: ss                                  # ä»£ç†ç±»å‹
+#  server: 1.2.4.8                          # æœåŠ¡å™¨ IP
+#  port: 443                                 #  ç«¯å£å·
+#  cipher: chacha20-ietf-poly1305   # åŠ å¯†æ–¹æ³•
+#  password: "password"                # SS å¯†ç 
+#  # udp: true                                #é»˜è®¤ä¸å¼€å¯
   
-#µÚ¶şÖÖÅäÖÃ
-# Shadowsocks + simple-obfs   ÅäÖÃ·¶±¾
-#- name: "ÄãµÄSS½Úµã2"
+#ç¬¬äºŒç§é…ç½®
+# Shadowsocks + simple-obfs   é…ç½®èŒƒæœ¬
+#- name: "ä½ çš„SSèŠ‚ç‚¹2"
 #  type: ss
 #  server: 1.2.4.8
 #  port: 443
@@ -81,29 +81,29 @@ Proxy:
 #  password: "password"
 #  plugin: obfs
 #  plugin-opts:                 
-#    mode: tls # or http               #  ´ó²¿·ÖÑ¡Ôñ HTTP
-#    # host: bing.com                  #  Î±×°
+#    mode: tls # or http               #  å¤§éƒ¨åˆ†é€‰æ‹© HTTP
+#    # host: bing.com                  #  ä¼ªè£…
  
-# VMess µÄÅäÖÃ
-#- name: "ÄãµÄV2RAY½Úµã1" # Èí¼şÏÔÊ¾µÄ½ÚµãÃû×Ö
-#  type: vmess # ´úÀíÀàĞÍ
-#  server: v2ray.cool # ·şÎñÆ÷ IP
-#  port: 443 #  ¶Ë¿ÚºÅ
+# VMess çš„é…ç½®
+#- name: "ä½ çš„V2RAYèŠ‚ç‚¹1" # è½¯ä»¶æ˜¾ç¤ºçš„èŠ‚ç‚¹åå­—
+#  type: vmess # ä»£ç†ç±»å‹
+#  server: v2ray.cool # æœåŠ¡å™¨ IP
+#  port: 443 #  ç«¯å£å·
 #  uuid: a759441e-7638-40bd-92b9-42034793f207
-#  alterId: 64  #¶îÍâµÄ ID
+#  alterId: 64  #é¢å¤–çš„ ID
 #  cipher: auto
-#  #ÉÏÃæ¼¸ĞĞÎª±ØÑ¡²ÎÊı
-#  #ÏÂÃæ¼¸ĞĞÎª¿ÉÑ¡²ÎÊı  ¸ù¾İÄãµÄÅäÖÃÇé¿öÀ´
-#  # udp: true    #Ä¬ÈÏ²»¿ªÆô
-#  # tls: true      #TLS ¿ªÆô
-#  # skip-cert-verify: true     #Ä¬ÈÏ²»¿ªÆô
-#  # network: ws    # ÍøÂ·ÀàĞÍ WS HTTP µÈ
-#  # ws-path: /path  # Â·¾¶
-#  # ws-headers:     #Ä¬ÈÏ²»¿ªÆô
+#  #ä¸Šé¢å‡ è¡Œä¸ºå¿…é€‰å‚æ•°
+#  #ä¸‹é¢å‡ è¡Œä¸ºå¯é€‰å‚æ•°  æ ¹æ®ä½ çš„é…ç½®æƒ…å†µæ¥
+#  # udp: true    #é»˜è®¤ä¸å¼€å¯
+#  # tls: true      #TLS å¼€å¯
+#  # skip-cert-verify: true     #é»˜è®¤ä¸å¼€å¯
+#  # network: ws    # ç½‘è·¯ç±»å‹ WS HTTP ç­‰
+#  # ws-path: /path  # è·¯å¾„
+#  # ws-headers:     #é»˜è®¤ä¸å¼€å¯
 #  #  Host: v2ray.com    # HOST
 
 
-# ÅäÖÃ¿ªÊ¼
+# é…ç½®å¼€å§‹
 - name: "V2ray"
   type: vmess
   server: tls.leeroot886.xyz
@@ -116,60 +116,92 @@ Proxy:
   ws-path: /
   Host: tls.leeroot886.xyz
 
+- name: "V2ray1"
+  type: vmess
+  server: tls1.leeroot886.xyz
+  port: 443
+  uuid: 738cdd9e-af08-47ee-861c-203a0ed1d5c2
+  alterId: 233
+  cipher: auto
+  tls: true
+  network: ws
+  ws-path: /
+  Host: tls1.leeroot886.xyz
+
+- name: "V2ray2"
+  type: vmess
+  server: tls2.leeroot886.xyz
+  port: 443
+  uuid: d1b696c6-345c-456e-ae69-7f01d79f2d56
+  alterId: 233
+  cipher: auto
+  tls: true
+  network: ws
+  ws-path: /
+  Host: tls2.leeroot886.xyz
+
 
 
  
-###############################################################ÅäÖÃ·Ö¸îÏß
+###############################################################é…ç½®åˆ†å‰²çº¿
 
-# ´úÀí×é²ßÂÔ
+# ä»£ç†ç»„ç­–ç•¥
 Proxy Group:
 
-# url-test Í¨¹ıÖ¸¶¨µÄ URL ²âÊÔ²¢Ñ¡ÔñÑÓ³Ù×îµÍµÄ½Úµã
-- name: "×Ô¶¯½ÚµãÑ¡Ôñ"
+# url-test é€šè¿‡æŒ‡å®šçš„ URL æµ‹è¯•å¹¶é€‰æ‹©å»¶è¿Ÿæœ€ä½çš„èŠ‚ç‚¹
+- name: "è‡ªåŠ¨èŠ‚ç‚¹é€‰æ‹©"
   type: url-test
   proxies:
     - "V2ray"
+    - "V2ray1"
+    - "V2ray2"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 
-# ´úÀí½ÚµãÑ¡Ôñ
+# ä»£ç†èŠ‚ç‚¹é€‰æ‹©
 - name: "PROXY"
   type: select
   proxies:
-    - "×Ô¶¯½ÚµãÑ¡Ôñ"
+    - "è‡ªåŠ¨èŠ‚ç‚¹é€‰æ‹©"
     - "V2ray"
-# °×Ãûµ¥Ä£Ê½ PROXY£¬ºÚÃûµ¥Ä£Ê½ DIRECT
+    - "V2ray1"
+    - "V2ray2"
+# ç™½åå•æ¨¡å¼ PROXYï¼Œé»‘åå•æ¨¡å¼ DIRECT
 - name: "Final"
   type: select
   proxies:
     - "PROXY"
     - "DIRECT"
-# Apple ·şÎñ´úÀí
+# Apple æœåŠ¡ä»£ç†
 - name: "Apple"
   type: select
   proxies:
     - "DIRECT"
     - "PROXY"
-# ¹ú¼ÊÁ÷Ã½Ìå·şÎñ
+# å›½é™…æµåª’ä½“æœåŠ¡
 - name: "GlobalMedia"
   type: select
   proxies:
     - "PROXY"
     - "V2ray"
-# ´óÂ½Á÷Ã½ÌåÃæÏò¸Û°ÄÌ¨ÏŞ¶¨·şÎñ
+    - "V2ray1"
+    - "V2ray2"
+# å¤§é™†æµåª’ä½“é¢å‘æ¸¯æ¾³å°é™å®šæœåŠ¡
 - name: "HKMTMedia"
   type: select
   proxies:
     - "DIRECT"
     - "V2ray"
-# ÔËÓªÉÌ¼°ÉùÃûÀÇ½åÍøÕ¾½Ù³Ö
+    - "V2ray1"
+    - "V2ray2"
+# è¿è¥å•†åŠå£°åç‹¼è—‰ç½‘ç«™åŠ«æŒ
 - name: "Hijacking"
   type: select
   proxies:
     - "REJECT"
     - "DIRECT"
 
-# ¹æÔò
+# è§„åˆ™
 Rule:
 # Unbreak
 # > Google
@@ -177,7 +209,7 @@ Rule:
 - DOMAIN,dl.google.com,DIRECT
 - DOMAIN,mtalk.google.com,DIRECT
 
-# Internet Service Providers Hijacking ÔËÓªÉÌ½Ù³Ö
+# Internet Service Providers Hijacking è¿è¥å•†åŠ«æŒ
 - DOMAIN-SUFFIX,17gouwuba.com,Hijacking
 - DOMAIN-SUFFIX,186078.com,Hijacking
 - DOMAIN-SUFFIX,189zj.cn,Hijacking
@@ -333,8 +365,8 @@ Rule:
 - IP-CIDR,220.115.251.25/32,Hijacking,no-resolve
 - IP-CIDR,222.73.156.235/32,Hijacking,no-resolve
 
-# Malware ¶ñÒâÍøÕ¾
-# > ¿ìÑ¹
+# Malware æ¶æ„ç½‘ç«™
+# > å¿«å‹
 # https://zhuanlan.zhihu.com/p/39534279
 - DOMAIN-SUFFIX,kuaizip.com,Hijacking
 # > MacKeeper
@@ -345,7 +377,7 @@ Rule:
 # https://www.zhihu.com/question/281163698/answer/441388130
 - DOMAIN-SUFFIX,flash.cn,Hijacking
 - DOMAIN,geo2.adobe.com,Hijacking
-# > C&J Marketing Ë¼½ÜÂí¿Ë¶¡Èí¼ş
+# > C&J Marketing æ€æ°é©¬å…‹ä¸è½¯ä»¶
 # https://www.zhihu.com/question/46746200
 - DOMAIN-SUFFIX,4009997658.com,Hijacking
 - DOMAIN-SUFFIX,abbyychina.com,Hijacking
@@ -525,7 +557,7 @@ Rule:
 - DOMAIN,hboasia4-i.akamaihd.net,GlobalMedia
 - DOMAIN,hboasia5-i.akamaihd.net,GlobalMedia
 - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,GlobalMedia
-# > »ªÎÄµçÊÓ
+# > åæ–‡ç”µè§†
 # USER-AGENT,HWTVMobile*,GlobalMedia
 - DOMAIN-SUFFIX,5itv.tv,GlobalMedia
 - DOMAIN-SUFFIX,ocnttv.com,GlobalMedia
@@ -533,7 +565,7 @@ Rule:
 - DOMAIN-SUFFIX,hulu.com,GlobalMedia
 - DOMAIN-SUFFIX,huluim.com,GlobalMedia
 - DOMAIN-SUFFIX,hulustream.com,GlobalMedia
-# > Hulu(¥Õ©`¥ë©`)
+# > Hulu(ãƒ•ãƒ¼ãƒ«ãƒ¼)
 - DOMAIN-SUFFIX,happyon.jp,GlobalMedia
 - DOMAIN-SUFFIX,hulu.jp,GlobalMedia
 # > ITV
@@ -604,7 +636,7 @@ Rule:
 - DOMAIN-SUFFIX,phncdn.com,GlobalMedia
 - DOMAIN-SUFFIX,pornhub.com,GlobalMedia
 - DOMAIN-SUFFIX,pornhubpremium.com,GlobalMedia
-# > Ì¨ÍåºÃ
+# > å°æ¹¾å¥½
 # USER-AGENT,TaiwanGood*,GlobalMedia
 - DOMAIN-SUFFIX,skyking.com.tw,GlobalMedia
 - DOMAIN,hamifans.emome.net,GlobalMedia
@@ -630,7 +662,7 @@ Rule:
 - DOMAIN,youtubei.googleapis.com,GlobalMedia
 
 # (HKMTMedia)
-# > ÛÆæË‡Ì¨³Õ¾
+# > æ„›å¥‡è—å°ç£ç«™
 - DOMAIN-SUFFIX,iqiyi.com,HKMTMedia
 - DOMAIN-SUFFIX,71.am,HKMTMedia
 # > bilibili
@@ -1262,7 +1294,7 @@ Rule:
 - DOMAIN-SUFFIX,didialift.com,DIRECT
 - DOMAIN-SUFFIX,didiglobal.com,DIRECT
 - DOMAIN-SUFFIX,udache.com,DIRECT
-# > µ°µ°ÔŞ
+# > è›‹è›‹èµ
 - DOMAIN-SUFFIX,343480.com,DIRECT
 - DOMAIN-SUFFIX,baduziyuan.com,DIRECT
 - DOMAIN-SUFFIX,com-hs-hkdy.com,DIRECT
